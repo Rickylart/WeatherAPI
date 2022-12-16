@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "72285b71-ba91-4605-853d-375e5c685f30",
+		"name": "WeatherAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6683121"
+	},
+	"item": [
+		{
+			"name": "Get All Stored Weather Report",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Store New Weather Report",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country_city\":\"oblogo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/store_weather_report",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"store_weather_report"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
